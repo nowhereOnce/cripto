@@ -1,4 +1,5 @@
 import random
+
 tabla_homofonica = {
     'a': ['000010', '000101', '000001'],
     'b': ['000111', '000000'],
@@ -66,6 +67,16 @@ def descifrar(mensaje_cifrado):
                 mensaje_descifrado += letra
                 break
     return mensaje_descifrado
+
+# # Impresión de la tabla homofónica (es necesario instalar la librería tabulate)
+# # pip install tabulate
+# from tabulate import tabulate
+# # Convertir el diccionario en una lista de listas para tabulate
+# tabla = [[letra, ", ".join(valores)] for letra, valores in tabla_homofonica.items()]
+# # Encabezados de la tabla
+# encabezados = ["Letra", "Valores Binarios"]
+# # Imprimir la tabla
+# print(tabulate(tabla, headers=encabezados, tablefmt="grid"))
 
 mensaje = 'este es un mensaje secreto'
 
